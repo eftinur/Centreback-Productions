@@ -4,16 +4,30 @@
   box-sizing: border-box;
 }
 
+html,
 body {
+  scroll-behavior: smooth;
   font-family: "Montserrat", sans-serif;
 }
 
+@font-face {
+  font-family: "Lagency Regular";
+  src: url(fonts/lagency-regular.otf);
+  font-size: normal;
+}
+
+/* Navigation Area */
+nav a {
+  font-family: "Lagency Regular", sans-serif;
+  font-size: 1.25rem;
+}
+
+/* Hero Area */
 main {
-  background: #10101A;
+  background: #10101a;
   position: relative;
   height: 100vh;
   overflow: hidden;
-
 }
 
 .image {
@@ -28,4 +42,164 @@ main {
 
 .image[data-status="active"] {
   display: block;
+}
+
+/* About Area */
+.about_wrapper h2 {
+  font-family: "Lagency Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.about_wrapper p {
+  font-family: "Lagency Regular", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Pros Area */
+.pros_wrapper {
+  background: #10101a;
+  color: #fff;
+}
+
+.pros_wrapper h3 {
+  font-family: "Lagency Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.pros_wrapper p {
+  font-family: "Lagency Regular", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+/* Services Area */
+
+.services_wrapper h2 {
+  font-family: "Lagency Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 3rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.services_wrapper h3 {
+  font-family: "Lagency Regular", sans-serif;
+  text-transform: uppercase;
+  font-size: 2rem;
+  padding-bottom: 2rem;
+  font-weight: bolder;
+}
+
+.services_wrapper p {
+  font-family: "Lagency Regular", sans-serif;
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+/* Work Area */
+
+.work_wrapper {
+  font-family: "Lagency Regular", sans-serif;
+}
+
+/* Contact From Area */
+/* Input container */
+
+.input-container {
+  position: relative;
+  margin: 32px 20px;
+}
+
+/* Input field */
+.input-field {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+/* Input label */
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 16px;
+  color: rgba(204, 204, 204, 0);
+  pointer-events: none;
+  transition: all 0.3s ease;
+}
+
+/* Input highlight */
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #007bff;
+  transition: all 0.3s ease;
+}
+
+/* Input field:focus styles */
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #007bff;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 100%;
+}
+/* Common Button */
+.button {
+  height: 50px;
+  width: 200px;
+  position: relative;
+  background-color: transparent;
+  cursor: pointer;
+  border: 1px solid #252525;
+  overflow: hidden;
+  border-radius: 30px;
+  color: #333;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-txt {
+  z-index: 1;
+  font-weight: 800;
+  letter-spacing: 4px;
+}
+
+.type1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  transition: all 0.5s ease-in-out;
+  background-color: #333;
+  border-radius: 30px;
+  visibility: hidden;
+  height: 10px;
+  width: 10px;
+  z-index: -1;
+}
+
+.button:hover {
+  color: #fff;
+  border: none;
+}
+
+.type1:hover::after {
+  visibility: visible;
+  transform: scale(100) translateX(2px);
 }

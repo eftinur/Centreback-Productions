@@ -12,15 +12,25 @@
     />
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.css"
+    />
   </head>
   <body>
     <!-- Navigation Area -->
-    <nav>
+    <nav class="max-w-[1320px] mx-auto flex justify-between py-8">
       <h2>Navigation Area</h2>
+      <ul class="flex gap-4">
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li><a href="">Work</a></li>
+        <li><a href="">Contact</a></li>
+      </ul>
     </nav>
 
     <!-- Hero Area -->
-    <main class="">
+    <main class="hero_wrapper">
       <img
         src="https://images.unsplash.com/photo-1541675154750-0444c7d51e8e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=430&q=80"
         alt=""
@@ -94,11 +104,207 @@
       />
     </main>
 
-    <!-- Footer Area -->
-    <footer>
-      <h2>Footer Area</h2>
-    </footer>
-  </body>
+    <!-- About Area -->
+    <section
+      class="about_wrapper max-w-[1320px] grid grid-cols-5 mx-auto px-4 py-20"
+    >
+      <h2 class="col-span-2 test">About Us</h2>
+      <div class="col-span-3">
+        <p>
+          Centreback Productions is a visual content making firm and the visual
+          branch.
+        </p>
+        <p>
+          Our main aim is to develop contents that are going to make an impact
+          on the audience and the industry as whole. Our vision is not only to
+          come up with quality content but also to change the whole
+          infrastructure of the industry with rich contents.
+        </p>
+        <p>
+          We will try to make the best use of our resources and give the people
+          global contents that they would enjoy- because that is exactly what
+          they deserve and we strive for.
+        </p>
+      </div>
+    </section>
 
-  <script src="script.js"></script>
+    <!-- Pros Area -->
+    <section class="pros_wrapper min-h-screen px-4 py-20">
+      <div class="max-w-[1320px] mx-auto grid grid-cols-5 gap-8">
+        <h3 class="col-span-2">Things we are good at</h3>
+        <div class="col-span-3">
+          <div class="mb-4">
+            <h3>To Commiunicate</h3>
+            <p>
+              Every brand has a story to tell an audience to reach out to our
+              ever-evolving shape-shifting production house was borne out of our
+              desire to bring magical stories to screen. and we’re never going
+              to run out of fuel on that front .
+            </p>
+          </div>
+          <div class="mb-4">
+            <h3>To Create</h3>
+            <p>
+              Films are at the core of our strengths – it’s the centre of the
+              HSD universe, the kick drum to our beating heart. we develop them
+              with passion work tirelessly on their execution and cater to both
+              local and global audiences
+            </p>
+          </div>
+          <div class="mb-4">
+            <h3>Collaborate</h3>
+            <p>
+              We know how chaotic it can get for one to negotiate with logistics
+              and permission. we have an itch to accept challenges if the script
+              appeals to us. We specialize in such territory with ease. we offer
+              hassle-free production services for international film television
+              and video shoots in bangladesh
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Area -->
+    <section class="services_wrapper max-w-[1320px] mx-auto px-4 py-20">
+      <div class="w-3/4 mx-auto text-center mb-12">
+        <h2>Our Services</h2>
+        <p>
+          Storytelling expertise backed by a thorough understanding of brands
+          through advertising, we are a one-stop solution for you.
+        </p>
+      </div>
+      <div class="grid grid-cols-3 gap-4">
+        <div class="border px-8 py-4">
+          <h3>Pre-production</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            numquam inventore ab amet dicta minus rerum incidunt doloribus saepe
+            porro!
+          </p>
+        </div>
+        <div class="border px-8 py-4">
+          <h3>Filming</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            numquam inventore ab amet dicta minus rerum incidunt doloribus saepe
+            porro!
+          </p>
+        </div>
+        <div class="border px-8 py-4">
+          <h3>Editing</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse
+            numquam inventore ab amet dicta minus rerum incidunt doloribus saepe
+            porro!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zoom Out on Scrolling -->
+    <section class="zoom_out h-screen flex justify-center items-center">
+      <h2 class="text-5xl font-extrabold text-center mt-32">
+        Zoom Out on Scrolling
+      </h2>
+    </section>
+
+    <!-- Work Area -->
+    <section class="work_wrapper px-4 py-20">
+      <div class="max-w-[1320px] mx-auto">
+        <div class="w-3/4 mx-auto text-center mb-12">
+          <h2>Our Recent Works</h2>
+        </div>
+      </div>
+    </section>
+
+    <!-- Zoom In on Scrolling -->
+    <section class="zoom_in h-screen flex justify-center items-center">
+      <h2 class="text-5xl font-extrabold text-center mt-32">
+        Zoom In on Scrolling
+      </h2>
+    </section>
+
+    <!-- Client Area -->
+    <section class="h-screen flex justify-center items-center">
+      <h2 class="text-xl font-bold text-gray-100 text-center mt-32">
+        Zoom In on Scrolling
+      </h2>
+    </section>
+
+    <!-- Contact Form Area -->
+    <section class="contact_wrapper max-w-[1320px] mx-auto px-4 py-20 my-20">
+      <div class="max-w-[1320px] mx-auto flex justify-between gap-8">
+        <div class="w-1/3">
+          <h4 class="text-xl font-bold text-gray-100 mb-8">Get in touch</h4>
+          <div class="flex flex-col gap-4 mt-6">
+            <h5 class="text-lg text-gray-300">Email</h5>
+            <a href="#">centreback@gmail.com</a>
+            <a href="#">tarekmahmud@gmail.com</a>
+          </div>
+          <div class="flex flex-col gap-4 mt-6">
+            <h5 class="text-lg text-gray-300">Cell Phone</h5>
+            <a href="#">+8802557981247</a>
+            <a href="#">+8802557981248</a>
+          </div>
+          <div class="flex flex-col gap-4 mt-6">
+            <h5 class="text-lg text-gray-300">Social Media</h5>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
+          </div>
+        </div>
+        <div class="flex-1">
+          <h4 class="text-xl font-bold text-gray-100 mb-8 pl-4">
+            Send us a message!
+          </h4>
+          <form action="">
+            <div class="input-container">
+              <input placeholder="Name" class="input-field" type="text" />
+              <label for="input-field" class="input-label">Enter text</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+              <input placeholder="Email" class="input-field" type="text" />
+              <label for="input-field" class="input-label">Enter text</label>
+              <span class="input-highlight"></span>
+            </div>
+            <div class="input-container">
+              <textarea
+                rows="4"
+                cols="4"
+                placeholder="Message"
+                class="input-field"
+                type="text"
+              ></textarea>
+              <label for="input-field" class="input-label">Enter text</label>
+              <span class="input-highlight"></span>
+            </div>
+            <button class="button type1 ml-5 mt-4">
+              <span class="btn-txt">Send</span>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Area -->
+    <footer class="max-w-[1320px] mx-auto px-4 flex justify-between">
+      <div>
+        <h4 class="text-lg font-medium text-gray-300">
+          Centre Back Production
+        </h4>
+        <p class="text-small text-gray-300">© 2023 Centreback Productions</p>
+      </div>
+      <div>
+        <small class="text-small text-gray-300">Made By</small>
+        <h5 class="text-lg text-gray-300">Efti Nur</h5>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.co/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@4.1.4/dist/locomotive-scroll.min.js"></script>
+    <script src="script.js"></script>
+  </body>
 </html>
