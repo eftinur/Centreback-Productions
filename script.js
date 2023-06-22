@@ -85,6 +85,7 @@ gsap.from(
 // GSAP Navigation
 const revealBtn = document.querySelector(".hamburger_menu");
 const unrevealBtn = document.querySelector(".unreveal_btn");
+const test = document.querySelector(".test");
 
 let menuTl = gsap.timeline({ paused: true });
 menuTl
@@ -110,4 +111,26 @@ unrevealBtn.addEventListener("click", () => {
   menuTl.timeScale(2.5);
   menuTl.reverse();
   console.log("Hola");
+});
+
+test.addEventListener("click", () => {
+  console.log("test");
+  menuTl.timeScale(2.5);
+  menuTl.reverse();
+});
+
+// Projects GSAP
+
+gsap.from(".projects", {
+  stagger: 0.2,
+  y: 200,
+  opacity: 0,
+  duration: 2,
+  scrollTrigger: {
+    trigger: ".projects",
+    markers: true,
+    start: "top bottom-=100",
+    end: "top center-=200",
+    scrub: 2,
+  },
 });
